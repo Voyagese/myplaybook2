@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: Install ssh key
+    authorized_key:
+      user: ec2-user
+      state: present
+      key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDE8hP74hX9lBP8cIUfvMqOhNqRBT2CbXOfX+SXLEEXZWE4BvGMoJhI3v7Lsgs7pZaAfrrbUN7xB4QKzZ5r2D1O2GUA4iweFll3plsQtBW1tqyREVZs6QJ5KujZKBDF19hLYaHDG3OZJKCiOZHSFIvvZMeAxCI0pvt0y2OhUzAHWjGdgVB7qMAtRjbIhPucOEiTylc7mhRzNxFv0xdWiezd+NPbenqXdgwLEFnvwSxYnHHfjw5pYDvYWEaORihN5Nn7p+AC4o4aDtiZdl4EGgMj5Xxh/jBMC0QI26y3kGGrWkpv6953b79lBbk00Ia/31Q2QiWvQHQDara5XgZokYU7 olgaguseva@Olgas-Air.attlocal.net"
